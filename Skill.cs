@@ -2,10 +2,8 @@ using System;
 
 namespace testCsharpOOP
 {
-
-    class Hero : Unit
+    interface ISkill
     {
-        
+        void use (Unit u);
     }
-
 }

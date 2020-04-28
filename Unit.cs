@@ -2,7 +2,7 @@ using System;
 
 namespace testCsharpOOP
 {
-    abstract class Unit
+    abstract class Unit : SkillUser
     {
         protected string id {get; set;}
         protected string name {get; set;}
@@ -19,8 +19,12 @@ namespace testCsharpOOP
         protected int meanAttack;
         protected int attackVariance;
 
+        protected bool inBoard;
+        protected int _x;
+        protected int _y;
+
         public Unit (){
-            
+
         }
 
     }
