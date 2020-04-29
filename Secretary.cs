@@ -4,11 +4,15 @@ namespace testCsharpOOP
 {
     class Secretary : User
     {
-        public AppointmentController appointmentController;
         
         public override void login(string uName, string pWord)
         {
             // TODO : Secretary login 
+        }
+
+        public override void initializeAppointmentController()
+        {
+            appointmentController = new SecretaryAppointmentController();
         }
     }
 }

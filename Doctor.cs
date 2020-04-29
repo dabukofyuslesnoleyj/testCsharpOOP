@@ -11,5 +11,10 @@ namespace testCsharpOOP
         {
             // TODO : Doctor login 
         }
+
+        public override void initializeAppointmentController()
+        {
+            appointmentController = new DoctorAppointmentController();
+        }
     }
 }
