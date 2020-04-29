@@ -3,11 +3,52 @@ using System.Collections.Generic;
 
 namespace testCsharpOOP
 {
-    class AppointmentController
+    abstract class AppointmentController
     {
-        public List<Appointment> appointments;
+        public Dictionary<string, Appointment> appointments;
 
+        public abstract void AddAppointment(Appointment a);
+
+        public abstract void DeleteAppointment(string appointmentID);    
         
-        
+    }
+
+    class DoctorAppointmentController : AppointmentController
+    {
+        public override void AddAppointment(Appointment a)
+        {
+
+        }
+
+        public override void DeleteAppointment(string appointmentID)
+        {
+
+        }
+    }
+
+    class PatientAppointmentController : AppointmentController
+    {
+        public override void AddAppointment(Appointment a)
+        {
+
+        }
+
+        public override void DeleteAppointment(string appointmentID)
+        {
+
+        }
+    }
+
+    class SecretaryAppointmentController : AppointmentController
+    {
+        public override void AddAppointment(Appointment a)
+        {
+
+        }
+
+        public override void DeleteAppointment(string appointmentID)
+        {
+
+        }
     }
 }
