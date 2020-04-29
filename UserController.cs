@@ -14,7 +14,7 @@ namespace testCsharpOOP
         public User GetUser(string userID)
         {
             return users[userID];
-        } 
-        
+        }
+
     }
 }

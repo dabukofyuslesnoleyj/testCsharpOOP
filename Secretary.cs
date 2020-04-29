@@ -14,5 +14,10 @@ namespace testCsharpOOP
         {
             appointmentController = new SecretaryAppointmentController();
         }
+
+        public void editAppointment ()
+        {
+            
+        }
     }
 }

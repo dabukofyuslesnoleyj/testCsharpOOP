@@ -16,6 +16,7 @@ namespace testCsharpOOP
         public void changeCurrentUser(User newUser)
         {
             currentUser = newUser;
+            // 
         }
     }
 }

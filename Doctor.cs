@@ -5,7 +5,8 @@ namespace testCsharpOOP
 {
     class Doctor : User
     {
-        public string doctorProfile;
+        public string doctorProfile {get; set;}
+        public List <TimeSpan> timeslots;
 
         public override void login(string uName, string pWord)
         {
@@ -15,6 +16,11 @@ namespace testCsharpOOP
         public override void initializeAppointmentController()
         {
             appointmentController = new DoctorAppointmentController();
+        }
+
+        public void cancelAppointment ()
+        {
+
         }
     }
 }
