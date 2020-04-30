@@ -51,4 +51,17 @@ namespace testCsharpOOP
 
         }
     }
+
+    class AdminAppointmentController : AppointmentController
+    {
+        public override void AddAppointment(Appointment a)
+        {
+
+        }
+
+        public override void DeleteAppointment(string appointmentID)
+        {
+
+        }
+    }
 }

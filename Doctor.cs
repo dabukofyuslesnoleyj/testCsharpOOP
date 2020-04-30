@@ -8,7 +8,11 @@ namespace testCsharpOOP
         public string doctorProfile {get; set;}
         public List <TimeSpan> timeslots;
 
-        public override void login(string uName, string pWord)
+        public Doctor (string userName, string passWord) : base (userName, passWord)
+        {
+        }
+
+        public override void login(string userName, string passWord)
         {
             // TODO : Doctor login 
         }

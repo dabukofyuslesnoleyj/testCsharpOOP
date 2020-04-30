@@ -6,8 +6,12 @@ namespace testCsharpOOP
     class Patient : User
     {
         public string patientRemarks {get; set;}
-        
-        public override void login(string uName, string pWord)
+
+        public Patient (string userName, string passWord) : base (userName, passWord)
+        {
+        }
+
+        public override void login(string userName, string passWord)
         {
             // TODO : Patient login 
         }

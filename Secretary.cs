@@ -4,8 +4,10 @@ namespace testCsharpOOP
 {
     class Secretary : User
     {
-        
-        public override void login(string uName, string pWord)
+        public Secretary (string userName, string passWord) : base (userName, passWord)
+        {
+        }
+        public override void login(string userName, string passWord)
         {
             // TODO : Secretary login 
         }

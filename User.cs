@@ -9,7 +9,13 @@ namespace testCsharpOOP
         public string password {get; set;}
         protected AppointmentController appointmentController;
 
-        public abstract void login(string uName, string pWord);
+        public User (string userName, string passWord)
+        {
+            this.userName = userName;
+            this.password = passWord;
+        }
+
+        public abstract void login(string userName, string passWord);
 
         public abstract void initializeAppointmentController();
 
